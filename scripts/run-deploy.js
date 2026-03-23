@@ -1,12 +1,8 @@
-import { exec } from "node:child_process";
+import { exec, spawn } from "node:child_process";
 
 function execProm(command) {
   return new Promise((resolve, reject) => {
     exec(command, (err, stdout, stderr) => {
-      console.log("err", err);
-      console.log("stdout", stdout);
-      console.log("stderr", stderr);
-
       if (!err) {
         return resolve(stdout);
       } else {
@@ -34,11 +30,13 @@ async function runDeploy() {
       );
     }
 
-    const versionStr = await execProm("npm version patch");
+    await execProm("npm version patch");
   } catch (err) {
     console.error(err);
     process.exit(1);
   }
 }
 
-runDeploy();
+runDeploy().then(() => {
+  spawn("npm publish");
+});
