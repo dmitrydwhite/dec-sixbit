@@ -1,0 +1,30 @@
+{
+  "name": "dec-sixbit",
+  "version": "0.0.1",
+  "description": "JS / TS methods for using DEC SIXBIT encoding",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+      "dist"
+  ],
+  "scripts": {
+    "test": "tsc --project tsconfig.test.json && node test-dist/test/index.test.js && rm -rf test-dist",
+    "build": "tsc"
+  },
+  "keywords": [
+    "dec",
+    "sixbit",
+    "encoding",
+    "il2p"
+  ],
+  "author": "white.dmitry@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  }
+}
