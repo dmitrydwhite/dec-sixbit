@@ -34,7 +34,7 @@ async function runDeploy() {
 
     console.log("Version updated to " + vString);
     console.log(
-      "Double check your npmrc file (using nphome) and publish to NPM!",
+      "Double check your npmrc file (using nphome) and publish to NPM!\n> nphome\n> npm publish",
     );
   } catch (err) {
     console.error(err);
