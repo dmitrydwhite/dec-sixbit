@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "test": "tsc --project tsconfig.test.json && node test-dist/test/index.test.js && rm -rf test-dist",
-    "build": "tsc"
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsc"
   },
   "keywords": [
     "dec",

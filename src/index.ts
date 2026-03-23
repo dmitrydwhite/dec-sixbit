@@ -81,7 +81,7 @@ export function unPack(buf: Buffer, padding: 'left' | 'right'): string {
     return result.trim();
 }
 
-export function clampCs(str: string) {
+function clampCs(str: string) {
     let clamped = str.slice(0, 6);
 
     while (clamped.length < 6) {
