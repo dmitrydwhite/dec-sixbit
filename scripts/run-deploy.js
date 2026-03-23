@@ -33,6 +33,9 @@ async function runDeploy() {
     const vString = await execProm("npm version patch");
 
     console.log("Version updated to " + vString);
+    console.log(
+      "Double check your npmrc file (using nphome) and publish to NPM!",
+    );
   } catch (err) {
     console.error(err);
     process.exit(1);
