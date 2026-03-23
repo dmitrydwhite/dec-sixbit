@@ -13,7 +13,8 @@
     "test": "tsc --project tsconfig.test.json && node test-dist/test/index.test.js && rm -rf test-dist",
     "clean": "rm -rf ./dist",
     "deploy": "node scripts/run-deploy.js",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && tsc",
+    "blt": "tsup"
   },
   "keywords": [
     "dec",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@types/node": "^25.5.0",
     "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
     "typescript": "^6.0.2"
   }
 }
