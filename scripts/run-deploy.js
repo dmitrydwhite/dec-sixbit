@@ -38,5 +38,5 @@ async function runDeploy() {
 }
 
 runDeploy().then(() => {
-  spawn("npm publish");
+  spawn("npm", ["publish"]);
 });
