@@ -36,6 +36,8 @@ async function runDeploy() {
     console.log(
       "Double check your npmrc file (using nphome) and publish to NPM!\n> nphome\n> npm publish",
     );
+
+    exec('echo "nphome && npm publish" | pbcopy');
   } catch (err) {
     console.error(err);
     process.exit(1);
