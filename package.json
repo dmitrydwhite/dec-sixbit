@@ -1,13 +1,13 @@
 {
   "name": "dec-sixbit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JS / TS methods for using DEC SIXBIT encoding",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-      "dist"
+    "dist"
   ],
   "scripts": {
     "test": "tsc --project tsconfig.test.json && node test-dist/test/index.test.js && rm -rf test-dist",
