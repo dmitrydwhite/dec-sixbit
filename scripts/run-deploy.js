@@ -30,7 +30,9 @@ async function runDeploy() {
       );
     }
 
-    await execProm("npm version patch");
+    const vString = await execProm("npm version patch");
+
+    console.log("Version updated to " + vString);
   } catch (err) {
     console.error(err);
     process.exit(1);
