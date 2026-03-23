@@ -1,6 +1,6 @@
 {
   "name": "dec-sixbit",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "JS / TS methods for using DEC SIXBIT encoding",
   "type": "module",
   "main": "./dist/index.js",
